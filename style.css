@@ -2,7 +2,9 @@
 
 body {
     font-family: 'Cabin';
-    background-color: #758190;
+    background-color: #121212;
+    color: #f5f5f5;
+
 }
 
 #tentacles {
@@ -11,17 +13,19 @@ body {
 
 .header {
     display: flex;
-    background-color: lightblue;
-    padding: 1%;
+    background-color: #1f1f1f;
+    padding: 20px;
+    color: #ffffff;
     align-items: center;
     margin-left: -10px;
     margin-right: -10px;
     margin-top: -10px;
+    border-bottom: 2px solid #333;
 }
 
 .stats-container {
     display: flex;
-    align-items: center; /* or use 'flex-start' or 'flex-end' based on design */
+    align-items: center;
 }
 .stats-container:hover {
     cursor: pointer;
@@ -54,12 +58,13 @@ body {
 }
 
 .game-card {
-    background-color: #FFFFFF;
+    background-color: #1e1e1e;
     padding: 1%;
     margin: 1%;
     width: 300px;
     text-align: center;
-    border-radius: 7px;
+    border: 1px solid #333;
+    border-radius: 8px;
 }
 
 .game-card:hover {
@@ -72,9 +77,39 @@ body {
 }
 
 button {
+    transition: all 0.3s ease;
+    cursor: pointer;
     font-family: 'Cabin';
     border: none;
     padding: 1%;
     margin: 1%;
     border-radius: 7px;
+    background-color: #444;
+    color: white;
+}
+button:hover {
+    background-color: #ff5e5e; /* or another color of your choice */
+    transform: scale(1.05);
+    box-shadow: 0px 4px 12px rgba(255, 94, 94, 0.5);
+}
+
+#search-input {
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    width: 200px;
+}
+
+#search-button {
+    padding: 8px 12px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#search-button:hover {
+    background-color: #45a049;
 }

@@ -159,8 +159,7 @@ descriptionContainer.appendChild(p);
 
 /************************************************************************************
  * Challenge 7: Select & display the top 2 games
- * Skills used: spread operator, destructuring, template literals, sort 
- */
+ * Skills used: spread operator, destructuring, template literals, sort */
 
 const firstGameContainer = document.getElementById("first-game");
 const secondGameContainer = document.getElementById("second-game");
@@ -170,7 +169,33 @@ const sortedGames =  GAMES_JSON.sort( (item1, item2) => {
 });
 
 // use destructuring and the spread operator to grab the first and second games
+const [topGame, secondGame, ...rest] = sortedGames;
 
 // create a new element to hold the name of the top pledge game, then append it to the correct element
+const topGameElement = document.createElement("p");
+topGameElement.textContent = topGame.name;
+firstGameContainer.appendChild(topGameElement);
 
 // do the same for the runner up item
+
+const secondGameElement = document.createElement("p");
+secondGameElement.textContent = secondGame.name;
+secondGameContainer.appendChild(secondGameElement);
+const searchInput = document.getElementById("search-input");
+const searchButton = document.getElementById("search-button");
+
+//search button
+searchButton.addEventListener("click", () => {
+    const searchTerm = searchInput.value.toLowerCase();
+    const filteredGames = GAMES_JSON.filter(game =>
+        game.name.toLowerCase().includes(searchTerm)
+    );
+    
+    deleteChildElements(gamesContainer);
+    addGamesToPage(filteredGames);
+});
+searchInput.addEventListener("keydown", (event) => {
+    if (event.key === "Enter") {
+        searchButton.click();
+    }
+});
