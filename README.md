@@ -25,9 +25,9 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented features:
 
-<video width="320" height="240" controls>
-  <source src="https://imgur.com/a/n26g1Yr" type="video/mp4">
-</video>
+Here's a walkthrough of implemented features:
+
+[Watch walkthrough video](https://imgur.com/a/n26g1Yr)
 
 <!-- Replace this with whatever GIF tool you used! -->
 <!-- Recommended tools:
