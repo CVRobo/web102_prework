@@ -25,7 +25,7 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented features:
 
-<img src='https://drive.google.com/file/d/1H4Fbksew2fcjavkIx08cEbMcVpVnAytP/view?usp=sharing' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src=https://imgur.com/a/n26g1Yr title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
 <!-- Recommended tools:
